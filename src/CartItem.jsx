@@ -50,7 +50,7 @@ const CartItem = ({ onContinueShopping }) => {
   return (
     <div className="cart-container">
       <h2 style={{ color: 'black' }}>Total Cart Amount: ${calculateTotalAmount()}</h2>
-      <div>
+      <div className="cart-items">
         {cart.map(item => (
           <div className="cart-item" key={item.id}>
             <img className="cart-item-image" src={item.image} alt={item.name} />
@@ -72,7 +72,7 @@ const CartItem = ({ onContinueShopping }) => {
         Grand Total: ${calculateTotalAmount()}
       </div>
       <div className="continue_shopping_btn">
-        <button className="get-started-button" onClick={handleContinueShopping}>Continue Shopping</button>
+        <button className="get-started-button1" onClick={handleContinueShopping}>Continue Shopping</button>
         <br />
         <button className="get-started-button1" onClick={handleCheckoutShopping}>Checkout</button>
       </div>
